@@ -1,14 +1,13 @@
 body {
 	font-family: "Century Gothic", "新細明體", Geneva, Tahoma, sans-serif;
 }
-ul{
- list-style-type: none;
+ul {
+	list-style-type: none;
 }
 li {
 	cursor: pointer;
-	
 }
-#nav li a{
+#nav li a {
 	color: rgb(112, 110, 108);
 	display: block;
 	font-size: 25px;
@@ -20,7 +19,7 @@ li {
 }
 #item li {
 	color: rgb(112, 110, 108);
-	text-align:center;
+	text-align: center;
 	margin-bottom: 12px;
 	display: block;
 	font-size: 20px;
