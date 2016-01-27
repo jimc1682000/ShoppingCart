@@ -1,1 +1,1 @@
-This is a readme file.
+這是一個由一群程式愛好者寫出來的簡單購物網站。
