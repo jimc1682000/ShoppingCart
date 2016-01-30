@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<div id="status"></div>
-		<fb:login-button scope="public_profile,email,user_birthday" onlogin="checkLoginState();"></fb:login-button>
+		<fb:login-button scope="email" onlogin="checkLoginState();"></fb:login-button>
 	</body>
 	<script type="text/javascript">
 		function statusChangeCallback(response) {
@@ -39,7 +39,7 @@
 	<script>
 		window.fbAsyncInit = function() {
 			FB.init({
-				appId : '1440158429636031',
+				appId : '123180591398673',
 				xfbml : true,
 				version : 'v2.5'
 			});
