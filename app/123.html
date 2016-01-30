@@ -3,11 +3,26 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="app">
 	<head>
-		<!-- Libraries -->
+		<!-- 3rd Libraries -->
+		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="./js/hello.js"></script>
+		<!-- 3rd Css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" >
+		</link>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous" >
+		</link>
+
 		<script src="./app.js"></script>
+		<script src="./components/product/product.js"></script>
+		<script src="./components/product/productController.js"></script>
+		<script src="./components/product/productFactory.js"></script>
+		<script src="./components/product/productRouter.js"></script>
+		<script src="./components/product/productDetailController.js"></script>
 		<script src="./components/member/member.js"></script>
 		<script src="./components/member/memberController.js"></script>
 		<script src="./components/member/memberFactory.js"></script>
@@ -15,6 +30,9 @@
 	</head>
 	<body>
 		<ng-view></ng-view>
+		<button onclick="hello('windows').login()">windows</button>
+		
+		
 	</body>
 </html>
 

@@ -7,6 +7,7 @@ var assert = require('assert');
 var app = express();
 
 var members = require('./server/routers/Members.js');
+var products = require('./server/routers/Products.js');
 
 var mongoose = require('mongoose');
 var databaseUri = 'mongodb://45.56.87.70:27017/ShoppingCart';
@@ -24,6 +25,7 @@ app.use(function(req, res, next) {
 	next();
 });
 app.use('/members', members);
+app.use('/products', products);
 app.use(serveStatic('app', {
 	'index' : [ 'index.html', 'index.htm' ]
 }));
