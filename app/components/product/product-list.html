@@ -1,13 +1,8 @@
 <div class="row">
 	<div ng-repeat="product in products" class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<a  herf="#/prod/{{product._id}}"> <!-- <img src="{{product.IMAGE_URL}}" alt="{{product.NAME}}"></img> --> </a>
-			<div class="caption">
-				<a href="#/prod/{{product._id}}"> <h3>{{product.NAME}}</h3>
-				<p>
-					NT$ {{product.PRICE}}
-				</p> </a>
-			</div>
-		</div>
+		<a href="#/prod/{{product._id}}" class="thumbnail"> <img width="180px" src="{{product.IMAGE_URL}}" alt="{{product.NAME}}"> <h3 class="text-center">{{product.NAME}}</h3>
+		<p class="text-center">
+			NT$ {{product.PRICE}}
+		</p> </a>
 	</div>
 </div>
