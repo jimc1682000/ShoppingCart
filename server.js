@@ -5,7 +5,7 @@ var serveStatic = require('serve-static');
 var mongodb = require('mongodb');
 var assert = require('assert');
 var app = express();
-console.log(process.env.IP + process.env.PORT);
+// console.log(process.env.IP + process.env.PORT);
 var members = require('./server/routers/Members.js');
 var products = require('./server/routers/Products.js');
 
@@ -30,8 +30,8 @@ app.use(serveStatic('app', {
 	'index' : [ 'index.html', 'index.htm' ]
 }));
 app.use(serveStatic('res'));
-//app.listen(3000);
+app.listen(3000);
 //如果使用Cloud9，設定為process.env.PORT
-app.listen(process.env.PORT);
+// app.listen(process.env.PORT);
 
 module.exports = app;
